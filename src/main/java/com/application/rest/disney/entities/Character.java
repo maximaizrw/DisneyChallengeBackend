@@ -1,10 +1,7 @@
 package com.application.rest.disney.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.PositiveOrZero;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -29,11 +26,11 @@ public class Character {
     @Size(max = 50)
     @Column(name = "nombre")
     private String name;
-    @NotBlank
+    @NotNull
     @PositiveOrZero
     @Column(name = "edad")
     private int age;
-    @NotBlank
+    @NotNull
     @PositiveOrZero
     @Column(name = "peso")
     private double weight;
