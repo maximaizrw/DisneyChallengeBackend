@@ -4,6 +4,7 @@ import com.application.rest.disney.controller.dto.CharacterDTO;
 import com.application.rest.disney.controller.dto.CharacterSearchDTO;
 import com.application.rest.disney.entities.Character;
 import com.application.rest.disney.service.ICharacterService;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

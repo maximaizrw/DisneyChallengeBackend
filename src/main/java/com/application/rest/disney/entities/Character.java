@@ -27,7 +27,7 @@ public class Character {
     @Column(name = "nombre")
     private String name;
     @NotNull
-    @PositiveOrZero
+    @PositiveOrZero(message = "La edad debe ser mayor o igual a 0")
     @Column(name = "edad")
     private int age;
     @NotNull
